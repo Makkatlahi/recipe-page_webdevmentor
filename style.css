@@ -105,14 +105,33 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  width: 32rem;
+  margin-left: 3rem;
+  margin-top: -1rem;
   .ingredients {
-    width: 32rem;
-
     .ingredients__title {
+      font-size: 2.8rem;
+      color: var(--Brown-800);
+      font-weight: 400;
     }
     .ingredients__list {
+      line-height: 1.5;
+      border-bottom: 1px solid var(--Stone-150);
+      width: 100%;
+      padding-bottom: 2.6rem;
+
       .ingredients__list-item {
+        display: list-item;
+        font-family: var(--outfit);
+        font-size: 1.6rem;
+        color: var(--Stone-600);
+        font-weight: 400;
+        padding-left: 2rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+      }
+      .ingredients__list-item::marker {
+        font-size: 1.2rem;
       }
     }
   }
