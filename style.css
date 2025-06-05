@@ -108,6 +108,7 @@ p {
   width: 32rem;
   margin-left: 3rem;
   margin-top: -1rem;
+
   .ingredients {
     .ingredients__title {
       font-size: 2.8rem;
@@ -118,7 +119,7 @@ p {
       line-height: 1.5;
       border-bottom: 1px solid var(--Stone-150);
       width: 100%;
-      padding-bottom: 2.6rem;
+      padding-bottom: 2.8rem;
 
       .ingredients__list-item {
         display: list-item;
@@ -132,14 +133,41 @@ p {
       }
       .ingredients__list-item::marker {
         font-size: 1.2rem;
+        color: var(--Brown-800);
       }
     }
   }
   .instructions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
     .instructions__title {
+      font-size: 2.8rem;
+      color: var(--Brown-800);
+      font-weight: 400;
+      margin-top: -0.5rem;
     }
     .instructions__list {
+      line-height: 1.5;
+      border-bottom: 1px solid var(--Stone-150);
+      width: 93%;
+      padding-bottom: 3.5rem;
+
       .instructions__list-item {
+        display: list-item;
+        font-family: var(--outfit);
+        font-size: 1.5rem;
+        color: var(--Stone-600);
+        font-weight: 400;
+        padding-left: 1.8rem;
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+      }
+      .instructions__list-item::marker {
+        font-size: 1.4rem;
+        color: var(--Brown-800);
+        font-weight: bold;
       }
     }
   }
