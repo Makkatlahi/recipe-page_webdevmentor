@@ -172,16 +172,108 @@ p {
     }
   }
   .nutrition {
+    margin-top: 3rem;
+    color: var(--Stone-600);
+    text-align: left;
+    padding-bottom: 1.5rem;
+    height: 33.5rem;
+
     .nutrition__title {
+      font-size: 2.8rem;
+      color: var(--Brown-800);
+      font-weight: 400;
+      margin-top: -0.5rem;
+      margin-bottom: 2rem;
     }
     .nutrition__description {
+      font-size: 1.56rem;
+      font-weight: 400;
+      font-family: var(--outfit);
+      line-height: 1.5;
+      width: 90%;
     }
     .nutrition__table {
-      .nutrition__row {
+      width: 93%;
+      height: 19.5rem;
+      border-collapse: collapse;
+      font-size: 1.6rem;
+      font-family: var(--outfit);
+      margin-top: 1rem;
+
+      .nutrition__label,
+      .nutrition__value {
+        text-align: left;
       }
       .nutrition__label {
+        padding-left: 3rem;
       }
+
+      .nutrition__row:not(:last-child) td,
+      .nutrition__table .nutrition__row:not(:last-child) th {
+        border-bottom: 1px solid var(--Stone-150);
+      }
+
       .nutrition__value {
+        padding-right: 2rem;
+        color: var(--Brown-800);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1580px) {
+  /* html {
+    font-size: 0.625rem;
+    font-family: var(--young-serif);
+  } */
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Stone-100);
+  }
+  .container {
+    width: 73.6rem;
+    height: 171rem;
+    background-color: var(--White);
+    margin: 12.3rem 34.2rem;
+    gap: 2.4rem;
+    padding: 4rem;
+    border-radius: 2rem;
+    .container__img {
+      width: 65.6rem;
+      height: 30rem;
+      object-fit: cover;
+      margin-bottom: 0.1rem;
+      border-radius: 1.2rem;
+    }
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 0;
+
+    .header__title {
+      font-size: 4rem;
+    }
+    .header__prep {
+      width: 65.6rem;
+      height: 18rem;
+
+      .header__prep-list {
+        margin-left: 2rem;
+        margin-top: 0.8rem;
+        font-size: 1.6rem;
+        color: var(--Stone-600);
+      }
+      .header__prep-item {
+        display: list-item;
+        line-height: 1.5;
+        padding-left: 2rem;
+        width: 100%;
       }
     }
   }
